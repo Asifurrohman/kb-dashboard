@@ -3,13 +3,13 @@ let closeHamburgerMenu = document.getElementById('closeHamburgerMenu');
 let sidebar = document.getElementById('sidebar');
 
 hamburgerMenu.addEventListener('click', () => {
-    if(sidebar.classList.contains('sm:-translate-x-full')){
-        sidebar.classList.remove('sm:-translate-x-full');
+    if(sidebar.classList.contains('-translate-x-full')){
+        sidebar.classList.remove('-translate-x-full');
     } else {
-        sidebar.classList.add('sm:-translate-x-full');
+        sidebar.classList.add('-translate-x-full');
     }
 });
 
 closeHamburgerMenu.addEventListener('click', () => {
-    sidebar.classList.add('sm:-translate-x-full');
+    sidebar.classList.add('-translate-x-full');
 });
