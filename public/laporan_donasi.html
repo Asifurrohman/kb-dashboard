@@ -48,7 +48,7 @@
                 <button class="block lg:hidden" id="hamburgerMenu">
                     <ion-icon name="menu-outline" class="text-dark h-10" size="large"></ion-icon>
                 </button>
-                <div class="flex flex-row bg-pink-100">
+                <div class="flex flex-row">
                     <button id="langButton" class="flex flex-row items-center mr-5 lg:mr-10 relative">
                         <img src="img/flags/id.svg" alt="" class="h-3 rounded mr-2">
                         <span class="hover:text-custom-blue">ID</span>
@@ -84,30 +84,53 @@
         <div class="w-full lg:w-4/5 absolute right-0">
             <main id="main" class="min-h-screen bg-white mx-5 rounded shadow-md right-0 mt-24 p-5">
                 <div class="w-full mb-5">
-                    <ul class="flex border-b-2">
-                        <li><a href="#" class="border-b-4 border-custom-blue-2 text-custom-blue-2 font-semibold px-2.5">Donation Meter</a></li>
+                    <ul class="flex border-b-2 text-sm">
+                        <li><a href="#" class="shadow-sm border-b-4 border-custom-blue-2 text-custom-blue-2 font-semibold px-2.5">Donation Meter</a></li>
                         <li><a href="#" class="mx-2.5 text-slate-400 border-b-4 border-transparent hover:text-custom-blue hover:border-custom-blue px-2.5">Ringkasan Donasi</a></li>
                         <li><a href="#" class="mx-2.5 text-slate-400 border-b-4 border-transparent hover:text-custom-blue hover:border-custom-blue px-2.5">Daftar Konfirmasi Donasi</a></li>
                     </ul>
                 </div>
                 
-                <div class="w-full  overflow-x-auto">
+                <div class="w-full overflow-x-auto">
+                    <!-- <div class="bg-custom-blue-2 px-3 py-2 rounded text-white items-center text-sm">
+                        <a href="#" class="mx-2 hover:bg-blue-400 p-2 rounded">2019</a>
+                        <a href="#" class="mx-2 hover:bg-blue-400 p-2 rounded">2020</a>
+                        <a href="#" class="mx-2 hover:bg-blue-400 p-2 rounded">2021</a>
+                        <a href="#" class="mx-2 hover:bg-blue-400 p-2 rounded">2022</a>
+                        <a href="#" class="mx-2 hover:bg-blue-400 p-2 rounded">2023</a>
+                        <a href="#" class="mx-2 bg-white rounded text-custom-blue-2 p-2">2024</a>
+                    </div> -->
                     <table class="table-auto border border-inherit rounded">
                         <thead class="border-b-2 uppercase text-sm">
+                            <tr class="h-10 text-custom-blue-2">
+                                <th class="border-r"></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th><a href="#" class="mx-2 hover:bg-blue-400 hover:text-white rounded px-3 py-2">2020</a></th>
+                                <th><a href="#" class="mx-2 hover:bg-blue-400 hover:text-white rounded px-3 py-2">2021</a></th>
+                                <th><a href="#" class="mx-2 hover:bg-blue-400 hover:text-white rounded px-3 py-2">2022</a></th>
+                                <th><a href="#" class="mx-2 hover:bg-blue-400 hover:text-white rounded px-3 py-2">2023</a></th>
+                                <th><a href="#" class="mx-2 hover:bg-blue-400 hover:text-white rounded px-3 py-2">2024</a></th>
+                            </tr>
                             <tr>
-                                <th class="py-2 px-3 border-r">Adik Bintang Saya</th>
-                                <th class="py-2 px-3 border-r">Jan</th>
-                                <th class="py-2 px-3 border-r">Feb</th>
-                                <th class="py-2 px-3 border-r">Mar</th>
-                                <th class="py-2 px-3 border-r">Apr</th>
-                                <th class="py-2 px-3 border-r">Mei</th>
-                                <th class="py-2 px-3 border-r">Jun</th>
-                                <th class="py-2 px-3 border-r">Jul</th>
-                                <th class="py-2 px-3 border-r">Agu</th>
-                                <th class="py-2 px-3 border-r">Sep</th>
-                                <th class="py-2 px-3 border-r">Okt</th>
-                                <th class="py-2 px-3 border-r">Nov</th>
-                                <th class="py-2 px-3">Des</th>
+                                <th class="py-2 px-3 border-r" rowspan="2">Adik Bintang Saya</th>
+                                <th class="py-2 px-3 border">Jan</th>
+                                <th class="py-2 px-3 border">Feb</th>
+                                <th class="py-2 px-3 border">Mar</th>
+                                <th class="py-2 px-3 border">Apr</th>
+                                <th class="py-2 px-3 border">Mei</th>
+                                <th class="py-2 px-3 border">Jun</th>
+                                <th class="py-2 px-3 border">Jul</th>
+                                <th class="py-2 px-3 border">Agu</th>
+                                <th class="py-2 px-3 border">Sep</th>
+                                <th class="py-2 px-3 border">Okt</th>
+                                <th class="py-2 px-3 border">Nov</th>
+                                <th class="py-2 px-3 border">Des</th>
                             </tr>
                         </thead>
                         <tbody>
