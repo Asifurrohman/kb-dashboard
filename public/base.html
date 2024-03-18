@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Kakak Bintang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body" class="font-inter bg-custom-ligth-grey w-full h-full">
+    <div class="relative">
+        <aside id="sidebar" class="w-2/5 sm:w-3/5 lg:w-1/5 bg-custom-dark-grey min-h-screen fixed top-0 -translate-x-full lg:translate-x-0 lg:left-0 transition ease-in-out duration-300 z-20 lg:z-0">
+            <div class="w-full px-5 py-4 flex flex-row justify-between lg:justify-center">
+                <a href="#" class=""><img src="img/logo.svg" alt="" class="h-8"></a>
+                <button id="closeHamburgerMenu">
+                    <ion-icon name="close-outline" class="block lg:hidden text-white" size="large"></ion-icon>
+                </button>
+            </div>
+            <hr class="border-slate-50/[.09]">
+            <div class="link-wrapper px-3 text-sm sm:text-base">
+                <ul class="mt-5">
+                    <li>
+                        <a href="#" class="flex items-center rounded p-2 text-white bg-slate-50/[.09] mb-2.5">
+                            <span class="w-5 h-5"><ion-icon name="grid"></ion-icon></span>
+                            <span class="ms-3">Beranda</span>
+                        </a>
+                        <a href="program_donasi.html" class="flex items-center rounded p-2 hover:bg-custom-blue text-white mb-2.5">
+                            <span class="w-5 h-5"><ion-icon name="library"></ion-icon></span>
+                            <span class="ms-3">Program Donasi</span>
+                        </a>
+                        <a href="adik_bintang_saya.html" class="flex items-center rounded p-2 hover:bg-custom-blue text-white mb-2.5">
+                            <span class="w-5 h-5"><ion-icon name="people"></ion-icon></span>
+                            <span class="ms-3">Adik Bintang Saya</span>
+                        </a>
+                        <a href="adik_bintang_saya.html" class="flex items-center rounded p-2 hover:bg-custom-blue text-white mb-2.5">
+                            <span class="w-5 h-5"><ion-icon name="people"></ion-icon></span>
+                            <span class="ms-3">Laporan Donasi</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        
+        <nav class="h-16 bg-white drop-shadow fixed w-full lg:w-4/5 right-0 top-0 z-10">
+            <div class="container w-full h-full p-5 flex flex-row justify-between lg:justify-end items-center">
+                <button class="block lg:hidden" id="hamburgerMenu">
+                    <ion-icon name="menu-outline" class="text-dark h-10" size="large"></ion-icon>
+                </button>
+                <div class="flex flex-row bg-pink-100">
+                    <button id="langButton" class="flex flex-row items-center mr-5 lg:mr-10 relative">
+                        <img src="img/flags/id.svg" alt="" class="h-3 rounded mr-2">
+                        <span class="hover:text-custom-blue">ID</span>
+                        <div id="langMenu" class="hidden text-center text-base bg-white border border-inherit rounded w-52 absolute top-0 right-0 mt-10 z-30 p-2">
+                            <a href="#" class="flex flex-row justify-between items-center hover:text-custom-blue-2">
+                                <img src="img/flags/id.svg" alt="" class="h-3 rounded mr-2">
+                                <span>Bahasa Indonesia</span>
+                            </a>
+                            <hr class="my-2">
+                            <a href="#" class="flex flex-row justify-between items-center hover:text-custom-blue-2">
+                                <img src="img/flags/gb.svg" alt="" class="h-3 rounded mr-2">
+                                English
+                            </a>
+                        </div>
+                    </button>
+                    <button id="avatarButton" type="button"  class="flex flex-row items-center relative">
+                        <span class="mr-2.5 hidden md:block hover:text-custom-blue">Michelangelo</span>
+                        <div class="w-12 h-12">
+                            <img class="rounded-full max-w-full h-auto align-middle border-none" src="img/shanon.jpg" alt="user image" />
+                        </div>
+                        <div id="avatarMenu" class="hidden text-center text-base bg-white border border-inherit rounded w-40 absolute top-0 right-0 mt-10 z-30 p-2">
+                            <a href="profil.html">Profil saya</a>
+                            <hr class="my-2">
+                            <a href="#" class="w-full text-red-600 hover:text-red-900">Sign out</a>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <div class="bg-custom-blue rounded h-10 w-40 absolute top-0 right-0 mr-8 mt-20 bottom-0 z-10"></div> -->
+        
+        <div class="w-full lg:w-4/5 absolute right-0">
+            <main id="main" class="min-h-screen bg-white mx-5 rounded shadow-md right-0 mt-24 p-5">
+                something
+            </main>
+        </div>
+        
+        <button class="fixed bg-custom-blue-2 hover:bg-custom-blue rounded-full bottom-0 right-0 mb-4 mr-4 flex px-5 py-2 items-center text-white">
+            <span class="mr-2">Pesan</span>
+            <ion-icon name="mail" size="large"></ion-icon>
+        </button>
+        
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

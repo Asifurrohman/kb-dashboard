@@ -4,6 +4,8 @@ let sidebar = document.getElementById('sidebar');
 let avatarButton = document.getElementById('avatarButton');
 let avatarMenu = document.getElementById('avatarMenu');
 let main = document.getElementById('main');
+let langButton = document.getElementById('langButton');
+let langMenu = document.getElementById('langMenu');
 
 hamburgerMenu.addEventListener('click', () => {
     if(sidebar.classList.contains('-translate-x-full')){
@@ -20,18 +22,27 @@ closeHamburgerMenu.addEventListener('click', () => {
 avatarButton.addEventListener('click', (e) => {
     if(avatarMenu.classList.contains('hidden')){
         avatarMenu.classList.remove('hidden');
-        avatarMenu.classList.add('block');
     } else {
-        avatarMenu.classList.remove('block');
         avatarMenu.classList.add('hidden');
+    }
+});
+
+langButton.addEventListener('click', () =>{
+    if(langMenu.classList.contains('hidden')){
+        langMenu.classList.remove('hidden');
+    } else {
+        langMenu.classList.add('hidden');
     }
 });
 
 main.onclick = (e) => {
     if(!avatarMenu.classList.contains('hidden') && !avatarMenu.contains(e.target)){
-        avatarMenu.classList.remove('block');
         avatarMenu.classList.add('hidden');
         console.log('gak iso wleeek!');
+    }
+
+    if(!langMenu.classList.contains('hidden') && !langMenu.contains(e.target)){
+        langMenu.classList.add('hidden');
     }
 
     if(!sidebar.classList.contains('-translate-x-full') && !sidebar.contains(e.target)){
